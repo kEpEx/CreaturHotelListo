@@ -1,0 +1,70 @@
+﻿body {
+    background-color:white;
+}
+
+.colorAdministracion{
+  background-color:#A9BCF5;
+}
+
+.colorIngresos{
+    background-color:#F3F781;
+}
+
+.colorAdmin{
+    background-color:#58FA58;
+}
+
+.colorAgentes{
+    background-color:#FA58F4;
+}
+
+.colorCalidad{
+    background-color:#FA8258;
+}
+
+.colorDireccion{
+    background-color:#FFFF00;
+}
+
+#headerMosDatAdmin{
+    width:100%;
+    height:250px;
+    background-color:#2EA6FE;
+    position:fixed;
+    margin-top:-401px;
+}
+
+h1{
+    padding-top:90px;
+    float:left;
+    color:white;
+    font-size:90px;
+    font-family:Dotum;
+}
+
+.botonRedondo{
+   border-radius: 200px 200px 200px 200px;
+-moz-border-radius: 200px 200px 200px 200px;
+-webkit-border-radius: 200px 200px 200px 200px;
+border: 0px solid #000000;
+}
+
+#contFiltros{
+    padding-left:90px;
+    position:fixed;
+    width:100%;
+    height:130px;
+    margin-top:-151px;
+    background-color:#848484;
+}
+
+
+#tablaResult{
+    margin-top:401px;
+    margin-left:30px;
+}
+
+#gvDatosAdmin{
+    margin-top:401px;
+}
+

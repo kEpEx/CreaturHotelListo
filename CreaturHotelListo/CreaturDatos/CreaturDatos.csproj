@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{33293E04-EC13-461C-A5C4-BCDE77912C4A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CreaturDatos</RootNamespace>
+    <AssemblyName>CreaturDatos</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=15.1.2.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Documents\ASP.NET AJAX Control Toolkit\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ConexcionBD">
+      <HintPath>..\..\..\..\..\Desktop\ConexcionBD.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdAgentes.aspx" />
+    <Content Include="AdFormBoleto.aspx" />
+    <Content Include="AdminCreatur.aspx" />
+    <Content Include="AgregarDatos.aspx" />
+    <Content Include="AgregarDatosAd.aspx" />
+    <Content Include="AgregarDatosAdministracion.aspx" />
+    <Content Include="AgregarDatosCalidad.aspx" />
+    <Content Include="AgregarDatosDireccion.aspx" />
+    <Content Include="AgregarDatosIngresos.aspx" />
+    <Content Include="Boleto.aspx" />
+    <Content Include="BoletoIng.aspx" />
+    <Content Include="css\BoletoEstilo.css" />
+    <Content Include="css\AdminCrea.css" />
+    <Content Include="css\AgreDatosEstilo.css" />
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\EstiloMostrarUsuario.css" />
+    <Content Include="css\hover.css" />
+    <Content Include="css\ImprimirBoleto.css" />
+    <Content Include="css\menuAdministracionEstilo.css" />
+    <Content Include="css\MosDatosAgente.css" />
+    <Content Include="css\MostrarAd.css" />
+    <Content Include="css\mostrarAdministracion.css" />
+    <Content Include="css\MostrarDatosAdmin.css" />
+    <Content Include="css\MostrarIngresos.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="images\amex.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Creaturlogo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\logo.png" />
+    <Content Include="img\AddUser.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\agreData.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\az.png" />
+    <Content Include="img\btnLogout.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\buscarImg.png" />
+    <Content Include="img\busqueda.png" />
+    <Content Include="img\Calendar.png" />
+    <Content Include="img\calendarImg.png" />
+    <Content Include="img\exportar.png" />
+    <Content Include="img\homebtn.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\imprimirBtn.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\mailImg.png" />
+    <Content Include="img\passIcon.png" />
+    <Content Include="img\userAdd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\userLogin.png" />
+    <Content Include="img\verData.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\verUser.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\verUsuarios.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\viewData.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\za.png" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery-1.11.3.min.js" />
+    <Content Include="js\jquery.quicksearch.js" />
+    <Content Include="js\MooTools-Core-1.5.1.js" />
+    <Content Include="js\npm.js" />
+    <Content Include="css\loginCreatur.css" />
+    <Content Include="css\menu.css" />
+    <Content Include="css\MostrarDat.css" />
+    <Content Include="css\Normalize.css" />
+    <Content Include="Datos\ModelCreaturHoteles.edmx.sql" />
+    <Content Include="images\AgreDatos.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\fotoAlgo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\nombreICono.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Index.aspx" />
+    <Content Include="menuAd.aspx" />
+    <Content Include="menuAdministracion.aspx" />
+    <Content Include="menuAgentes.aspx" />
+    <Content Include="menuCalidad.aspx" />
+    <Content Include="menuDirecGeneral.aspx" />
+    <Content Include="menuIngresos.aspx" />
+    <Content Include="menuPrincipal.aspx" />
+    <Content Include="ModificarAgentes.aspx" />
+    <Content Include="ModificarDatosAdmin.aspx" />
+    <Content Include="MostrarAd.aspx" />
+    <Content Include="MostrarDatoAdmin.aspx" />
+    <Content Include="MostrarDatosAdministracion.aspx" />
+    <Content Include="MostrarDatosAgentes.aspx" />
+    <Content Include="MostrarDatosCalidad.aspx" />
+    <Content Include="MostrarDatosDireccion.aspx" />
+    <Content Include="MostrarDatosIngresos.aspx" />
+    <Content Include="MostrarUsuarios.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdAgentes.aspx.cs">
+      <DependentUpon>AdAgentes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdAgentes.aspx.designer.cs">
+      <DependentUpon>AdAgentes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdFormBoleto.aspx.cs">
+      <DependentUpon>AdFormBoleto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdFormBoleto.aspx.designer.cs">
+      <DependentUpon>AdFormBoleto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCreatur.aspx.cs">
+      <DependentUpon>AdminCreatur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCreatur.aspx.designer.cs">
+      <DependentUpon>AdminCreatur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarDatos.aspx.cs">
+      <DependentUpon>AgregarDatos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarDatos.aspx.designer.cs">
+      <DependentUpon>AgregarDatos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarDatosAd.aspx.cs">
+      <DependentUpon>AgregarDatosAd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarDatosAd.aspx.designer.cs">
+      <DependentUpon>AgregarDatosAd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarDatosAdministracion.aspx.cs">
+      <DependentUpon>AgregarDatosAdministracion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarDatosAdministracion.aspx.designer.cs">
+      <DependentUpon>AgregarDatosAdministracion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarDatosCalidad.aspx.cs">
+      <DependentUpon>AgregarDatosCalidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarDatosCalidad.aspx.designer.cs">
+      <DependentUpon>AgregarDatosCalidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarDatosDireccion.aspx.cs">
+      <DependentUpon>AgregarDatosDireccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarDatosDireccion.aspx.designer.cs">
+      <DependentUpon>AgregarDatosDireccion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarDatosIngresos.aspx.cs">
+      <DependentUpon>AgregarDatosIngresos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarDatosIngresos.aspx.designer.cs">
+      <DependentUpon>AgregarDatosIngresos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDeDatos.cs" />
+    <Compile Include="Boleto.aspx.cs">
+      <DependentUpon>Boleto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Boleto.aspx.designer.cs">
+      <DependentUpon>Boleto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BoletoIng.aspx.cs">
+      <DependentUpon>BoletoIng.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BoletoIng.aspx.designer.cs">
+      <DependentUpon>BoletoIng.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\ModelCreaturHoteles.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelCreaturHoteles.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\ModelCreaturHoteles.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelCreaturHoteles.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\ModelCreaturHoteles.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelCreaturHoteles.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\tblDatos.cs">
+      <DependentUpon>ModelCreaturHoteles.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\tblUsuario.cs">
+      <DependentUpon>ModelCreaturHoteles.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Email.cs" />
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menuAd.aspx.cs">
+      <DependentUpon>menuAd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menuAd.aspx.designer.cs">
+      <DependentUpon>menuAd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menuAdministracion.aspx.cs">
+      <DependentUpon>menuAdministracion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menuAdministracion.aspx.designer.cs">
+      <DependentUpon>menuAdministracion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menuAgentes.aspx.cs">
+      <DependentUpon>menuAgentes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menuAgentes.aspx.designer.cs">
+      <DependentUpon>menuAgentes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menuCalidad.aspx.cs">
+      <DependentUpon>menuCalidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menuCalidad.aspx.designer.cs">
+      <DependentUpon>menuCalidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menuDirecGeneral.aspx.cs">
+      <DependentUpon>menuDirecGeneral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menuDirecGeneral.aspx.designer.cs">
+      <DependentUpon>menuDirecGeneral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menuIngresos.aspx.cs">
+      <DependentUpon>menuIngresos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menuIngresos.aspx.designer.cs">
+      <DependentUpon>menuIngresos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menuPrincipal.aspx.cs">
+      <DependentUpon>menuPrincipal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menuPrincipal.aspx.designer.cs">
+      <DependentUpon>menuPrincipal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarAgentes.aspx.cs">
+      <DependentUpon>ModificarAgentes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarAgentes.aspx.designer.cs">
+      <DependentUpon>ModificarAgentes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarDatosAdmin.aspx.cs">
+      <DependentUpon>ModificarDatosAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarDatosAdmin.aspx.designer.cs">
+      <DependentUpon>ModificarDatosAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarAd.aspx.cs">
+      <DependentUpon>MostrarAd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MostrarAd.aspx.designer.cs">
+      <DependentUpon>MostrarAd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarDatoAdmin.aspx.cs">
+      <DependentUpon>MostrarDatoAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MostrarDatoAdmin.aspx.designer.cs">
+      <DependentUpon>MostrarDatoAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarDatosAdministracion.aspx.cs">
+      <DependentUpon>MostrarDatosAdministracion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MostrarDatosAdministracion.aspx.designer.cs">
+      <DependentUpon>MostrarDatosAdministracion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarDatosAgentes.aspx.cs">
+      <DependentUpon>MostrarDatosAgentes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MostrarDatosAgentes.aspx.designer.cs">
+      <DependentUpon>MostrarDatosAgentes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarDatosCalidad.aspx.cs">
+      <DependentUpon>MostrarDatosCalidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MostrarDatosCalidad.aspx.designer.cs">
+      <DependentUpon>MostrarDatosCalidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarDatosDireccion.aspx.cs">
+      <DependentUpon>MostrarDatosDireccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MostrarDatosDireccion.aspx.designer.cs">
+      <DependentUpon>MostrarDatosDireccion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarDatosIngresos.aspx.cs">
+      <DependentUpon>MostrarDatosIngresos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MostrarDatosIngresos.aspx.designer.cs">
+      <DependentUpon>MostrarDatosIngresos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarUsuarios.aspx.cs">
+      <DependentUpon>MostrarUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MostrarUsuarios.aspx.designer.cs">
+      <DependentUpon>MostrarUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usuario.cs" />
+    <Compile Include="Validar.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Datos\ModelCreaturHoteles.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelCreaturHoteles.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Datos\ModelCreaturHoteles.edmx.diagram">
+      <DependentUpon>ModelCreaturHoteles.edmx</DependentUpon>
+    </Content>
+    <Content Include="Datos\ModelCreaturHoteles.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ModelCreaturHoteles.Context.cs</LastGenOutput>
+      <DependentUpon>ModelCreaturHoteles.edmx</DependentUpon>
+    </Content>
+    <Content Include="Datos\ModelCreaturHoteles.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ModelCreaturHoteles.cs</LastGenOutput>
+      <DependentUpon>ModelCreaturHoteles.edmx</DependentUpon>
+    </Content>
+    <Content Include="packages.config" />
+    <Content Include="css\bootstrap-theme.css.map" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51190</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51190/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

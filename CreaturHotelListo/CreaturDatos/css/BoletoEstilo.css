@@ -1,0 +1,245 @@
+﻿body {
+    background: white;
+}
+
+#HeaderDatos {
+    width: 100%;
+    height: 250px;
+    background-color: #20B2D9;
+    margin-top: -110px;
+    font-size: 50px;
+}
+
+button{
+    width:180px;
+    height:60px;
+    border-radius:20px 20px;
+    background-color:mediumturquoise;
+    color:white;
+    position:absolute;
+    top:705px;
+    left:593px;
+
+}
+
+#boletoGeneral {
+    background-color: white;
+    float: left;
+    width: 1000px;
+    height: 538px;
+    margin-left: 10px;
+    border: 2px solid black;
+    position: absolute;
+    top: 53px;
+    right: 185px;
+}
+
+#divImagenes {
+    background-color: white;
+    float: left;
+    width: 500px;
+    height: 120px;
+    margin-top: -140px;
+    margin-left: 10px;
+    border: 1px solid black;
+    position: absolute;
+    top: 139px;
+    right: 499px;
+}
+
+#voucherDiv {
+    background-color: white;
+    float: left;
+    width: 499px;
+    height: 91px;
+    margin-top: -140px;
+    margin-left: 10px;
+    border: 1px solid black;
+    position: absolute;
+    top: 139px;
+    right: -1px;
+}
+
+#FechaCreacionDiv {
+    background-color: white;
+    float: left;
+    width: 499px;
+    height: 13px;
+    margin-top: -140px;
+    margin-left: 10px;
+    border: 1px solid black;
+    position: absolute;
+    top: 232px;
+    right: -1px;
+}
+
+#expedienteDiv {
+    background-color: white;
+    float: left;
+    width: 499px;
+    height: 13px;
+    margin-top: -140px;
+    margin-left: 10px;
+    border: 1px solid black;
+    position: absolute;
+    top: 246px;
+    right: -1px;
+}
+
+#operadorDiv{
+    background-color: white;
+    float: left;
+    width: 500px;
+    height: 120px;
+    margin-top: -140px;
+    margin-left: 10px;
+    border: 1px solid black;
+    position: absolute;
+    top: 260px;
+    right: 499px;
+}
+
+#nombreHuespedDiv{
+    background-color: white;
+    float: left;
+    width: 500px;
+    height: 120px;
+    margin-top: -140px;
+    margin-left: 10px;
+    border: 1px solid black;
+    position: absolute;
+    top: 260px;
+    right: -1px;
+}
+
+#llegadaDiv{
+    background-color: white;
+    float: left;
+    width: 200px;
+    height: 40px;
+    margin-top: -140px;
+    margin-left: 10px;
+    border: 1px solid black;
+    position: absolute;
+    top: 381px;
+    right: 799px;
+}
+
+#salidaDiv{
+    background-color: white;
+    float: left;
+    width: 200px;
+    height: 40px;
+    margin-top: -140px;
+    margin-left: 10px;
+    border: 1px solid black;
+    position: absolute;
+    top: 381px;
+    right: 602px;
+}
+
+#pasajeroDiv{
+    background-color: white;
+    float: left;
+    width: 200px;
+    height: 40px;
+    margin-top: -140px;
+    margin-left: 10px;
+    border: 1px solid black;
+    position: absolute;
+    top: 381px;
+    right: 401px;
+}
+
+#claveDiv{
+    background-color: white;
+    float: left;
+    width: 200px;
+    height: 40px;
+    margin-top: -140px;
+    margin-left: 10px;
+    border: 1px solid black;
+    position: absolute;
+    top: 381px;
+    right: 200px;
+}
+
+#serivicioDiv{
+    background-color: white;
+    float: left;
+    width: 200px;
+    height: 40px;
+    margin-top: -140px;
+    margin-left: 10px;
+    border: 1px solid black;
+    position: absolute;
+    top: 381px;
+    right: -1px;
+}
+
+#alojamientoDiv{
+    background-color: white;
+    float: left;
+    width: 598px;
+    height: 197px;
+    margin-top: -140px;
+    margin-left: 10px;
+    border: 1px solid black;
+    position: absolute;
+    top: 422px;
+    left: -11px;
+}
+
+#formaPagoDiv{
+    background-color: white;
+    float: left;
+    width: 401px;
+    height: 197px;
+    margin-top: -140px;
+    margin-left: 10px;
+    border: 1px solid black;
+    position: absolute;
+    top: 422px;
+    left: 588px;
+}
+
+#agenteDiv{
+    background-color: white;
+    float: left;
+    width: 401px;
+    height: 57px;
+    margin-top: -140px;
+    margin-left: 10px;
+    border: 1px solid black;
+    position: absolute;
+    top: 620px;
+    left: 588px;
+}
+
+#duponResDiv{
+    background-color: white;
+    float: left;
+    width: 598px;
+    height: 57px;
+    margin-top: -140px;
+    margin-left: 10px;
+    border: 1px solid black;
+    position: absolute;
+    top: 620px;
+    left: -11px;
+}
+
+#footBoleto{
+
+    width:100%;
+    height:170px;
+    background-color:#0026ff;
+    margin-top:1661px;
+}
+
+p{
+    align-content:center;
+    color:white;
+    padding-top:27px;
+    padding-left:600px;
+}

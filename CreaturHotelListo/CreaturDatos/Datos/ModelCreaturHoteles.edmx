@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ModelCreaturHoteles.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ModelCreaturHotelesStoreContainer">
+    <EntitySet Name="tblUsuarios" EntityType="ModelCreaturHoteles.Store.tblUsuarios" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblDatos" EntityType="ModelCreaturHoteles.Store.tblDatos" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="tblUsuarios">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Correo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TipoUsuario" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Contra" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblDatos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FacturaProveedor" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="ObservacionesAdministracion" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="NumFacturaCreatur" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="ObservacionIngreso" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="FacturaEfectiva" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Agente" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="FechaCreacion" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Refacturacion" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="HK" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="GK" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Huesped" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Empresa" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Hotel" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="CiudadUbicacionHotel" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Confirmacion" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="FechaCheckIn" Type="datetime" Nullable="true" />
+    <Property Name="FechaCheckOut" Type="datetime" Nullable="true" />
+    <Property Name="NumeroNoches" Type="int" Nullable="true" />
+    <Property Name="TarifaBaseConImpIncluidos" Type="float" Nullable="true" />
+    <Property Name="TotalConImpIncluidos" Type="float" Nullable="true" />
+    <Property Name="TotalTarifaBaseHotel" Type="float" Nullable="true" />
+    <Property Name="ISH" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="TipoMoneda" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="PorcenGananSobreTotalImpuestosInclud" Type="float" Nullable="true" />
+    <Property Name="ImporteGanancia" Type="float" Nullable="false" />
+    <Property Name="ServiciosAdicionales" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="CargoServicio" Type="float" Nullable="true" />
+    <Property Name="ImporteServicioAdicional" Type="float" Nullable="true" />
+    <Property Name="PorcenGananciaSobreServAdicional" Type="float" Nullable="true" />
+    <Property Name="ImporteGananciaSobreServicioAdicional" Type="float" Nullable="true" />
+    <Property Name="TotalFacHospedaje" Type="float" Nullable="true" />
+    <Property Name="FormaPago" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="TipoTarifa" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="NumRechazadosDeTarjetas" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="ReservaEfectiva" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="ImporteCobrarHtl" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="FOPFinal" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="ObservacionDireccion" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ModelCreaturHoteles" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="ModelCreaturHotelesContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tblUsuarios" EntityType="ModelCreaturHoteles.tblUsuario" />
+          <EntitySet Name="tblDatos" EntityType="ModelCreaturHoteles.tblDatos" />
+        </EntityContainer>
+        <EntityType Name="tblUsuario">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Correo" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="TipoUsuario" Type="String" Nullable="false" />
+          <Property Name="Contra" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tblDatos">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FacturaProveedor" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="ObservacionesAdministracion" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="NumFacturaCreatur" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="ObservacionIngreso" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="FacturaEfectiva" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Agente" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="FechaCreacion" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Refacturacion" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="HK" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="GK" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Huesped" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Empresa" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Hotel" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="CiudadUbicacionHotel" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Confirmacion" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="FechaCheckIn" Type="DateTime" Nullable="true" />
+          <Property Name="FechaCheckOut" Type="DateTime" Nullable="true" />
+          <Property Name="NumeroNoches" Type="Int32" Nullable="true" />
+          <Property Name="TarifaBaseConImpIncluidos" Type="Double" Nullable="true" />
+          <Property Name="TotalConImpIncluidos" Type="Double" Nullable="true" />
+          <Property Name="TotalTarifaBaseHotel" Type="Double" Nullable="true" />
+          <Property Name="ISH" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="TipoMoneda" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="PorcenGananSobreTotalImpuestosInclud" Type="Double" Nullable="true" />
+          <Property Name="ImporteGanancia" Type="Double" Nullable="false" />
+          <Property Name="ServiciosAdicionales" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="CargoServicio" Type="Double" Nullable="true" />
+          <Property Name="ImporteServicioAdicional" Type="Double" Nullable="true" />
+          <Property Name="PorcenGananciaSobreServAdicional" Type="Double" Nullable="true" />
+          <Property Name="ImporteGananciaSobreServicioAdicional" Type="Double" Nullable="true" />
+          <Property Name="TotalFacHospedaje" Type="Double" Nullable="true" />
+          <Property Name="FormaPago" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="TipoTarifa" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="NumRechazadosDeTarjetas" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="ReservaEfectiva" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="ImporteCobrarHtl" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="FOPFinal" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="ObservacionDireccion" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelCreaturHotelesStoreContainer" CdmEntityContainer="ModelCreaturHotelesContainer">
+    <EntitySetMapping Name="tblUsuarios">
+      <EntityTypeMapping TypeName="IsTypeOf(ModelCreaturHoteles.tblUsuario)">
+        <MappingFragment StoreEntitySet="tblUsuarios">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="TipoUsuario" ColumnName="TipoUsuario" />
+          <ScalarProperty Name="Contra" ColumnName="Contra" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDatos">
+      <EntityTypeMapping TypeName="IsTypeOf(ModelCreaturHoteles.tblDatos)">
+        <MappingFragment StoreEntitySet="tblDatos">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FacturaProveedor" ColumnName="FacturaProveedor" />
+          <ScalarProperty Name="ObservacionesAdministracion" ColumnName="ObservacionesAdministracion" />
+          <ScalarProperty Name="NumFacturaCreatur" ColumnName="NumFacturaCreatur" />
+          <ScalarProperty Name="ObservacionIngreso" ColumnName="ObservacionIngreso" />
+          <ScalarProperty Name="FacturaEfectiva" ColumnName="FacturaEfectiva" />
+          <ScalarProperty Name="Agente" ColumnName="Agente" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="Refacturacion" ColumnName="Refacturacion" />
+          <ScalarProperty Name="HK" ColumnName="HK" />
+          <ScalarProperty Name="GK" ColumnName="GK" />
+          <ScalarProperty Name="Huesped" ColumnName="Huesped" />
+          <ScalarProperty Name="Empresa" ColumnName="Empresa" />
+          <ScalarProperty Name="Hotel" ColumnName="Hotel" />
+          <ScalarProperty Name="CiudadUbicacionHotel" ColumnName="CiudadUbicacionHotel" />
+          <ScalarProperty Name="Confirmacion" ColumnName="Confirmacion" />
+          <ScalarProperty Name="FechaCheckIn" ColumnName="FechaCheckIn" />
+          <ScalarProperty Name="FechaCheckOut" ColumnName="FechaCheckOut" />
+          <ScalarProperty Name="NumeroNoches" ColumnName="NumeroNoches" />
+          <ScalarProperty Name="TarifaBaseConImpIncluidos" ColumnName="TarifaBaseConImpIncluidos" />
+          <ScalarProperty Name="TotalConImpIncluidos" ColumnName="TotalConImpIncluidos" />
+          <ScalarProperty Name="TotalTarifaBaseHotel" ColumnName="TotalTarifaBaseHotel" />
+          <ScalarProperty Name="ISH" ColumnName="ISH" />
+          <ScalarProperty Name="TipoMoneda" ColumnName="TipoMoneda" />
+          <ScalarProperty Name="PorcenGananSobreTotalImpuestosInclud" ColumnName="PorcenGananSobreTotalImpuestosInclud" />
+          <ScalarProperty Name="ImporteGanancia" ColumnName="ImporteGanancia" />
+          <ScalarProperty Name="ServiciosAdicionales" ColumnName="ServiciosAdicionales" />
+          <ScalarProperty Name="CargoServicio" ColumnName="CargoServicio" />
+          <ScalarProperty Name="ImporteServicioAdicional" ColumnName="ImporteServicioAdicional" />
+          <ScalarProperty Name="PorcenGananciaSobreServAdicional" ColumnName="PorcenGananciaSobreServAdicional" />
+          <ScalarProperty Name="ImporteGananciaSobreServicioAdicional" ColumnName="ImporteGananciaSobreServicioAdicional" />
+          <ScalarProperty Name="TotalFacHospedaje" ColumnName="TotalFacHospedaje" />
+          <ScalarProperty Name="FormaPago" ColumnName="FormaPago" />
+          <ScalarProperty Name="TipoTarifa" ColumnName="TipoTarifa" />
+          <ScalarProperty Name="NumRechazadosDeTarjetas" ColumnName="NumRechazadosDeTarjetas" />
+          <ScalarProperty Name="ReservaEfectiva" ColumnName="ReservaEfectiva" />
+          <ScalarProperty Name="ImporteCobrarHtl" ColumnName="ImporteCobrarHtl" />
+          <ScalarProperty Name="FOPFinal" ColumnName="FOPFinal" />
+          <ScalarProperty Name="ObservacionDireccion" ColumnName="ObservacionDireccion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

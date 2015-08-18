@@ -1,0 +1,73 @@
+﻿body {
+    background-color:white;
+}
+
+#headAd{
+    padding-top:50px;
+    width:100%;
+    height:250px;
+    background-color:#20B2D9;
+    margin-top:-25px;
+    font-size:50px;
+}
+
+h1{
+    padding-top:80px;
+    float:left;
+    color:white;
+    font-family:Dotum;
+    align-content: stretch;
+}
+
+#btnAgAd{
+    border-radius: 199px 199px 199px 199px;
+    -moz-border-radius: 199px 199px 199px 199px;
+    -webkit-border-radius: 199px 199px 199px 199px;
+    border: 0px double #000000;
+    padding-top:140px;
+    color:white;
+    background-image:url('../images/AgreDatos.png');
+}
+
+#btnAgregarAdministracion{
+    margin-top:0px;
+    margin-right:30px;
+    margin-left:380px;
+    float:left;
+}
+
+#btnMostrarDatAdmin {
+    background-image: url('../images/fotoAlgo.png');
+    border-radius: 199px 199px 199px 199px;
+    -moz-border-radius: 199px 199px 199px 199px;
+    -webkit-border-radius: 199px 199px 199px 199px;
+    border: 0px double #000000;
+    padding-top: 140px;
+    color: white;
+}
+
+#btnMostrarDatos{
+    margin-top:130px;
+    margin-right:220px;
+    margin-bottom:300px;
+  
+  }
+
+#conBot{
+    text-align:center;
+}
+
+#footMenu{
+
+    width:100%;
+    height:183px;
+    background-color:#08088A;
+    margin-top:370px;
+}
+
+p{
+    align-content:center;
+    color:white;
+    padding-top:85px;
+    padding-left:572px;
+}
